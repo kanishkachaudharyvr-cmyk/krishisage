@@ -155,14 +155,16 @@
 
 :root { --ink: #102a2a; --aqua: #6fffe9; --violet: #9b8cff; --lime: #d7ff65; }
 
-body { font-family: 'DM Mono', monospace; background: #071b1d; }
-button, a { transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease; }
-button:active { transform: scale(.97); }
-.app-shell { position: relative; overflow: hidden; background: radial-gradient(circle at 10% 5%, rgba(111,255,233,.18), transparent 30%), radial-gradient(circle at 90% 20%, rgba(155,140,255,.16), transparent 32%), linear-gradient(135deg, #effff4 0%, #eafff7 48%, #f7f0ff 100%); }
-.app-shell::before { content: ''; position: fixed; inset: 0; pointer-events: none; opacity: .24; background-image: linear-gradient(rgba(16,42,42,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(16,42,42,.05) 1px, transparent 1px); background-size: 36px 36px; mask-image: linear-gradient(to bottom, black, transparent 80%); }
-.app-shell h1, .app-shell h2, .app-shell h3, .app-shell .font-serif { font-family: 'Syne', sans-serif; }
+body { font-family: 'Avenir Next', 'Trebuchet MS', ui-sans-serif, sans-serif; background: #071b1d; }
+button, a { transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms ease, background 220ms ease, border-color 220ms ease; }
+button:active { transform: scale(.96); }
+button:hover, a:hover { transform: translateY(-2px); }
+.app-shell { position: relative; overflow: hidden; background: radial-gradient(circle at 8% 4%, rgba(111,255,233,.22), transparent 28%), radial-gradient(circle at 92% 18%, rgba(155,140,255,.18), transparent 30%), linear-gradient(135deg, #effff4 0%, #e9fff7 45%, #f8f1ff 100%); }
+.app-shell::before { content: ''; position: fixed; inset: 0; pointer-events: none; opacity: .18; background-image: linear-gradient(rgba(16,42,42,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(16,42,42,.07) 1px, transparent 1px); background-size: 36px 36px; mask-image: linear-gradient(to bottom, black, transparent 82%); }
+.app-shell h1, .app-shell h2, .app-shell h3, .app-shell .font-serif { font-family: 'Avenir Next', 'Trebuchet MS', ui-sans-serif, sans-serif; letter-spacing: -.035em; }
 .app-shell > * { animation: rise-in .7s cubic-bezier(.2,.8,.2,1) both; }
 .app-shell > *:nth-child(2) { animation-delay: 80ms; } .app-shell > *:nth-child(3) { animation-delay: 160ms; }
+.app-shell section { scroll-margin-top: 92px; }
 .scan-dropzone::after { content: ''; position: absolute; inset: -40%; background: conic-gradient(from 90deg, transparent, rgba(111,255,233,.34), transparent 28%); animation: orbit-glow 7s linear infinite; pointer-events: none; }
 .scan-dropzone:hover { box-shadow: 0 0 0 5px rgba(111,255,233,.14), 0 20px 60px rgba(40,150,130,.18); }
 .glass { background: rgba(255,255,255,.52); border: 1px solid rgba(255,255,255,.72); box-shadow: 0 20px 60px rgba(33,80,70,.12); backdrop-filter: blur(18px); }
