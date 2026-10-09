@@ -15,6 +15,12 @@ The goal is to make crop-health information more accessible through explainable 
 * **Multilingual Guidance:** Provide farmer-friendly guidance in supported regional languages, including Hindi and Marathi.
 * **Treatment and Prevention Information:** Present curated recommendations intended to support informed crop-care decisions.
 
+## 🎯 Project Objectives
+1. Make crop disease identification more accessible to farmers through AI-powered image analysis.
+2. Improve prediction transparency using explainable AI and uncertainty-aware results.
+3. Bridge the gap between technical disease predictions and practical, easy-to-understand crop-care guidance.
+4. Encourage informed agricultural decisions through multilingual and farmer-friendly information.
+
 ## 🔄 How It Works
 
 1. Capture or upload a crop leaf image.
